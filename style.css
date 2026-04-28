@@ -1,0 +1,187 @@
+/* General Body and Font Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Light background */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #2c3e50; /* Darker blue-gray for headings */
+}
+
+h1 span {
+    color: #3498db; /* A nice blue for the name */
+}
+
+/* Header Section (for the name and title) */
+.header {
+    background-color: #eaf2f8; /* Lighter blue for the header background */
+    padding: 80px 20px; /* Increased padding for more space */
+    text-align: center; /* Center align all content within the header */
+    border-radius: 0; /* Ensure no radius for the main banner */
+}
+
+.header h1 {
+    font-size: 3.5em; /* Larger font size for the name */
+    margin-bottom: 10px;
+    display: inline-block; /* Allows centering of block-level element */
+    text-align: center; /* Explicitly center the text */
+    max-width: 100%; /* Ensure it doesn't overflow */
+}
+
+.header p {
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 0;
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    margin-bottom: 30px;
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    max-width: 900px; /* Max width for content */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Center content within each section */
+}
+
+.section h2 {
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    position: relative;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #3498db; /* Blue underline for section titles */
+    border-radius: 2px;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between image and text */
+    text-align: left; /* Default text alignment for content */
+}
+
+.about-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border: 4px solid #3498db; /* Blue border around the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1; /* Allows text to take available space */
+    min-width: 300px; /* Minimum width before wrapping */
+    text-align: left; /* Align text to the left */
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.about-text strong {
+    color: #2c3e50; /* Darker color for emphasis */
+}
+
+/* Achievements Section */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px; /* Space between cards */
+}
+
+.card {
+    background-color: #fdfefe; /* Slightly off-white for cards */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    width: 280px; /* Fixed width for cards */
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #3498db; /* Blue for card titles */
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card li {
+    margin-bottom: 10px;
+    padding-left: 25px; /* Space for custom bullet points */
+    position: relative;
+}
+
+.card li::before {
+    content: '\2022'; /* Bullet point character */
+    color: #3498db; /* Blue bullet */
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+/* Contact Section */
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    color: #3498db; /* Blue icons */
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between social icons */
+}
+
+.social links a {
+    color: #3498db;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
