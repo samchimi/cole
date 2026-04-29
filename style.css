@@ -123,7 +123,7 @@ button:hover {
   color: #eee;
 }
 
-.dark . header {
+.dark .header {
   background: #333;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
